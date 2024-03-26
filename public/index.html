@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+       <link rel="stylesheet" href="style.css">
+
+    <title> Alz-Mem Game </title>
+</head>
+<body>
+   
+      <h1>Alz-Mem Game</h1> 
+        <div class="topTools">            
+            <!-- <span class="moves"> Move(s)</span> -->
+            <div class="time">
+                <span class="minute">00</span>
+                <span>:</span>
+                <span class="second">00</span>
+             </div>
+                   
+            <span class="refresh"><img src="./assets/refresh.svg" alt="refreshImage"></i></span>
+        </div> 
+
+    <section class="memory-game">    
+        <div class="memory-card" data-id="1"> 
+            <img class="front-face" src="./assets/1.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="1">
+            <img class="front-face" src="./assets/1.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="2">
+            <img class="front-face" src="./assets/2.jpg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="2">
+            <img class="front-face" src="./assets/2.jpg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="3">
+            <img class="front-face" src="./assets/3.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="3">
+            <img class="front-face" src="./assets/3.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="4">
+            <img class="front-face" src="./assets/4.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="4">
+            <img class="front-face" src="./assets/4.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="5">
+            <img class="front-face" src="./assets/5.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="5">
+            <img class="front-face" src="./assets/5.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="6">
+            <img class="front-face" src="./assets/6.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="6">
+            <img class="front-face" src="./assets/6.jpeg" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+    </section>
+
+
+    <div class="topTools">            
+             <span class="moves"> Move(s)</span> 
+            
+            <span class="refresh"><img src="./assets/help.svg" alt="refreshImage"></i></span>
+        </div> 
+
+    <!-- Oyun tamamlaninca çikacak ekran -->
+    <section id="congratsSection" class="hidden">   
+        <div id="congratsDiv">
+            <img src="./assets/congrats.jpg" alt="congratsImage">
+            <p class="final">
+                <span id="totalTime"></span>
+            </p>
+            <br>
+            <p>
+                <a class="again">Play Again! </a>
+            </p>
+        </div>
+    </section>
+
+   <script src="app.js"></script>
+</body>
+</html>
